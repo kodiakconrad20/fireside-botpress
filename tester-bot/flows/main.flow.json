@@ -1,0 +1,93 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "Intro",
+  "nodes": [
+    {
+      "id": "df052970ef",
+      "name": "Navigation",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'create-account'",
+          "node": "CreateAccountFlow.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'login'",
+          "node": "LoginFlow.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'converse'",
+          "node": "ConversationFlow.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hello'",
+          "node": "ConversationFlow.flow.json"
+        },
+        {
+          "condition": "true",
+          "node": "catch"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lbs0Re"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "114b7e7782",
+      "name": "catch",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'login'",
+          "node": "LoginFlow.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'create-account'",
+          "node": "CreateAccountFlow.flow.json"
+        },
+        {
+          "condition": "true",
+          "node": "PreambleFlow.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-SKQxXN"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "926e54295b",
+      "name": "Intro",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'negative'",
+          "node": "Navigation"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'affirmitive'",
+          "node": "About_us"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-R8N-2Z"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "a0933b748c",
+      "name": "About_us",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Navigation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-YzUx-K"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

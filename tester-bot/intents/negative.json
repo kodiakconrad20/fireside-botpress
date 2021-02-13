@@ -1,0 +1,21 @@
+{
+  "name": "negative",
+  "utterances": {
+    "en": [
+      "negative",
+      "negative",
+      "nah",
+      "no",
+      "incorrect",
+      "false",
+      "nope",
+      "wrong",
+      "it is not",
+      "no no no"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

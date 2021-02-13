@@ -1,0 +1,18 @@
+{
+  "name": "converse",
+  "utterances": {
+    "en": [
+      "Have a conversation",
+      "I want to talk",
+      "Let's talk",
+      "just chat",
+      "hear me out",
+      "listen to me",
+      "I need to talk something out"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

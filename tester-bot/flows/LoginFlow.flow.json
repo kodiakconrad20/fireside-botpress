@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "1135481705",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-5_YgIm"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'negative'",
+          "node": "##"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'cancel'",
+          "node": "##"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'affirmitive'",
+          "node": "get_login_info"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "3ae4c5e921",
+      "name": "get_login_info",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-QJZVG9"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

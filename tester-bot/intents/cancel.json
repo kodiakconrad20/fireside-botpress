@@ -1,0 +1,15 @@
+{
+  "name": "cancel",
+  "utterances": {
+    "en": [
+      "Cancel",
+      "cancel",
+      "go back",
+      "previous"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

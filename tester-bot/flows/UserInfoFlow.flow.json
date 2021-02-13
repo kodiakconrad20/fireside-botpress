@@ -1,0 +1,75 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "triggers": [],
+  "description": "",
+  "nodes": [
+    {
+      "id": "2fe3c6689d",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-YkJR_i"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'affirmitive'",
+          "node": "UserInfo"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'negative'",
+          "node": "NoUserInfo"
+        },
+        {
+          "condition": "true",
+          "node": "catch-copy"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "1dbab27060",
+      "name": "UserInfo",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-uu6GjL"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "acc2760d25",
+      "name": "NoUserInfo",
+      "next": [
+        {
+          "condition": "true",
+          "node": "PreambleFlow.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-gzKA-I"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7c718c17c5",
+      "name": "catch-copy",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'affirmitive'",
+          "node": "UserInfo"
+        },
+        {
+          "condition": "true",
+          "node": "NoUserInfo"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-SKQxXN"
+      ],
+      "onReceive": []
+    }
+  ]
+}

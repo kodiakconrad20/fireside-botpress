@@ -1,0 +1,21 @@
+{
+  "name": "create-account",
+  "utterances": {
+    "en": [
+      "Create Account",
+      "I want to create an account",
+      "I want to sign up",
+      "let me register",
+      "help me create an account",
+      "Sign up",
+      "Create account",
+      "Set up",
+      "Register",
+      "Get started"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

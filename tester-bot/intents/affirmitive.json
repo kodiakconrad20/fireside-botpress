@@ -1,0 +1,22 @@
+{
+  "name": "affirmitive",
+  "utterances": {
+    "en": [
+      "Affirmative",
+      "Yes",
+      "Yeah",
+      "Ok",
+      "Fine",
+      "Yup",
+      "Uh huh",
+      "Definitely",
+      "Mhm",
+      "Sure",
+      "True"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}
