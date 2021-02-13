@@ -2,7 +2,6 @@
   "version": "0.0.1",
   "catchAll": {},
   "startNode": "entry",
-  "triggers": [],
   "description": "",
   "nodes": [
     {
@@ -14,16 +13,8 @@
       "onReceive": [],
       "next": [
         {
-          "condition": "event.nlu.intent.name === 'affirmitive'",
-          "node": "UserInfo"
-        },
-        {
-          "condition": "event.nlu.intent.name === 'negative'",
-          "node": "NoUserInfo"
-        },
-        {
           "condition": "true",
-          "node": "catch-copy"
+          "node": "UserInfo"
         }
       ],
       "type": "standard"
@@ -55,11 +46,11 @@
     },
     {
       "id": "7c718c17c5",
-      "name": "catch-copy",
+      "name": "repeat",
       "next": [
         {
           "condition": "event.nlu.intent.name === 'affirmitive'",
-          "node": "UserInfo"
+          "node": ""
         },
         {
           "condition": "true",
@@ -70,6 +61,16 @@
         "say #!builtin_text-SKQxXN"
       ],
       "onReceive": []
+    },
+    {
+      "id": "bb47b1f1f3",
+      "name": "Age",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-nyV1Tr"
+      ],
+      "onReceive": [],
+      "type": "standard"
     }
   ]
 }

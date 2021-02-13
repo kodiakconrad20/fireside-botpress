@@ -1,0 +1,31 @@
+{
+  "id": "age",
+  "name": "Age",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "1",
+      "synonyms": []
+    },
+    {
+      "name": "2",
+      "synonyms": []
+    },
+    {
+      "name": "3",
+      "synonyms": []
+    },
+    {
+      "name": "4",
+      "synonyms": []
+    },
+    {
+      "name": "5",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [],
+  "pattern": ""
+}

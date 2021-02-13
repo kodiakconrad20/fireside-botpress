@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "catchAll": {},
-  "startNode": "Intro",
+  "startNode": "Get_name",
   "nodes": [
     {
       "id": "df052970ef",
@@ -66,6 +66,10 @@
         {
           "condition": "event.nlu.intent.name === 'affirmitive'",
           "node": "About_us"
+        },
+        {
+          "condition": "true",
+          "node": "Navigation"
         }
       ],
       "onEnter": [
@@ -87,6 +91,23 @@
         "say #!builtin_text-YzUx-K"
       ],
       "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "cc37f13c79",
+      "name": "Get_name",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Intro"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-L4hxZH"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"fullname\",\"value\":\"{{event.payload.text}}\"}"
+      ],
       "type": "standard"
     }
   ]

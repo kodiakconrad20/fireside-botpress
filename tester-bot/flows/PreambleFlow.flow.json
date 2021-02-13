@@ -7,7 +7,9 @@
     {
       "id": "c8bf682f18",
       "name": "entry",
-      "onEnter": [],
+      "onEnter": [
+        "say #!builtin_text-AAYT_3"
+      ],
       "onReceive": null,
       "next": [],
       "type": "standard"

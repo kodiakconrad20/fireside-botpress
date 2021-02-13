@@ -191,11 +191,11 @@
     "formData": {
       "markdown$en": true,
       "typing$en": true,
-      "text$en": "Great. Let me help you with that."
+      "text$en": "Great. Let me help you with that. Please say your account identifying sentence"
     },
     "createdBy": "admin",
     "createdOn": "2021-02-10T14:26:46.965Z",
-    "modifiedOn": "2021-02-10T14:26:46.965Z"
+    "modifiedOn": "2021-02-13T16:38:23.975Z"
   },
   {
     "id": "builtin_text-5_YgIm",
@@ -216,11 +216,11 @@
     "formData": {
       "markdown$en": true,
       "typing$en": true,
-      "text$en": "Hi. Welcome to Fireside. Would you like to know what we are about?"
+      "text$en": "Hi {{user.fullname}} Welcome to Fireside. Would you like to know what we are about?"
     },
     "createdBy": "admin",
     "createdOn": "2021-02-13T16:02:25.943Z",
-    "modifiedOn": "2021-02-13T16:02:25.943Z"
+    "modifiedOn": "2021-02-13T17:13:13.439Z"
   },
   {
     "id": "builtin_text-YzUx-K",
@@ -238,11 +238,11 @@
     "formData": {
       "markdown$en": true,
       "typing$en": true,
-      "text$en": "Hi. Before we get started I just need a bit of information about you. Is that alright?"
+      "text$en": "Hi. Before we get started I just need a bit of information about you"
     },
     "createdBy": "admin",
     "createdOn": "2021-02-13T16:10:26.631Z",
-    "modifiedOn": "2021-02-13T16:10:26.631Z"
+    "modifiedOn": "2021-02-13T17:25:04.798Z"
   },
   {
     "id": "builtin_text-gzKA-I",
@@ -265,5 +265,82 @@
     "createdBy": "admin",
     "createdOn": "2021-02-13T16:18:02.475Z",
     "modifiedOn": "2021-02-13T16:18:02.475Z"
+  },
+  {
+    "id": "builtin_text-_w650u",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "We will send the user message to laravel to attempt login"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-02-13T16:55:55.133Z",
+    "modifiedOn": "2021-02-13T16:55:55.133Z"
+  },
+  {
+    "id": "builtin_text-sQVW-Z",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hi {{user.fullname}} Please type your email address. We promise this is the only typing you will have to do"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-02-13T17:06:26.762Z",
+    "modifiedOn": "2021-02-13T17:15:13.548Z"
+  },
+  {
+    "id": "builtin_text-L4hxZH",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Welcome! Before we get started, what is your name?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-02-13T17:09:25.898Z",
+    "modifiedOn": "2021-02-13T17:09:25.898Z"
+  },
+  {
+    "id": "builtin_text-MVLXbt",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Call some auth method in laravel to check"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-02-13T17:19:54.988Z",
+    "modifiedOn": "2021-02-13T17:19:54.988Z"
+  },
+  {
+    "id": "builtin_text-V3kCPB",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Great. Your account has been created. Now we need to gather some basic info about you"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-02-13T17:23:01.925Z",
+    "modifiedOn": "2021-02-13T17:23:01.925Z"
+  },
+  {
+    "id": "builtin_text-AAYT_3",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Basic preamble conversation...."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-02-13T17:23:37.516Z",
+    "modifiedOn": "2021-02-13T17:23:37.516Z"
+  },
+  {
+    "id": "builtin_text-nyV1Tr",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "First off, how old are you?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-02-13T17:26:26.954Z",
+    "modifiedOn": "2021-02-13T17:26:26.954Z"
   }
 ]

@@ -23,6 +23,10 @@
         {
           "condition": "event.nlu.intent.name === 'affirmitive'",
           "node": "get_login_info"
+        },
+        {
+          "condition": "true",
+          "node": "repeat"
         }
       ],
       "type": "standard"
@@ -30,9 +34,44 @@
     {
       "id": "3ae4c5e921",
       "name": "get_login_info",
-      "next": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "Account_id_sentence"
+        }
+      ],
       "onEnter": [
         "say #!builtin_text-QJZVG9"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"\",\"name\":\"\",\"value\":\"\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "1d98227c3f",
+      "name": "repeat",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'affirmitive'",
+          "node": "get_login_info"
+        },
+        {
+          "condition": "true",
+          "node": "##"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-SKQxXN"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "b8baae9786",
+      "name": "Account_id_sentence",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-_w650u"
       ],
       "onReceive": null,
       "type": "standard"

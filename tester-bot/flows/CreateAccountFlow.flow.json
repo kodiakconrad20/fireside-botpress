@@ -26,9 +26,50 @@
     {
       "id": "f06ee335af",
       "name": "get_info",
-      "next": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "repeat_email"
+        }
+      ],
       "onEnter": [
-        "say #!builtin_text-QJZVG9"
+        "say #!builtin_text-sQVW-Z"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"email\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "3871298eb2",
+      "name": "repeat_email",
+      "next": [
+        {
+          "condition": "true",
+          "node": "get_info"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'affirmitive'",
+          "node": "Account_created"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-MVLXbt"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "89122a007f",
+      "name": "Account_created",
+      "next": [
+        {
+          "condition": "true",
+          "node": "UserInfoFlow.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-V3kCPB"
       ],
       "onReceive": null,
       "type": "standard"
